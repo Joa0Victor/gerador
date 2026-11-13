@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sorteador de números</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="c" id="k1"></div>
+
+  <header class="top">
+    <span class="logo">Sorteio<b>Fácil</b></span>
+    <nav class="crumb">Início &rsaquo; Sorteio de números</nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h1>Sorteador de números</h1>
+      <p class="sub">Defina o intervalo e sorteie na hora<span class="h" id="k2">.</span></p>
+
+      <div class="display" id="display" aria-live="polite">
+        <span class="ball" id="ball">?</span>
+      </div>
+
+      <div class="grid">
+        <label>De
+          <input type="number" id="min" value="1">
+        </label>
+        <label>Até
+          <input type="number" id="max" value="50">
+        </label>
+        <label>Quantidade
+          <input type="number" id="qtd" value="1" min="1">
+        </label>
+      </div>
+
+      <div class="opts">
+        <label class="chk"><input type="checkbox" id="semRep" checked> Não repetir número</label>
+        <label class="chk"><input type="checkbox" id="anim" checked> Animação contagem regressiva</label>
+      </div>
+
+      <p class="erro" id="erro"></p>
+      <button id="btn" type="button">Sortear</button>
+    </section>
+
+    <section class="texto">
+      <h2>Como funciona o sorteador de números?</h2>
+      <p>Você escolhe o menor e o maior número, a quantidade de resultados e se quer evitar repetições. Ao clicar em <strong>Sortear</strong>, o sistema escolhe os números de forma aleatória.</p>
+      <h2>Para que serve?</h2>
+      <p>Rifas, escolha de ordem de apresentação, jogos, dinâmicas em sala de aula e qualquer situação em que você precise de um resultado imparcial.</p>
+    </section>
+  </main>
+
+  <footer>Sorteio justo e aleatório<span class="h" id="k3">&nbsp;·&nbsp;</span>2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>
